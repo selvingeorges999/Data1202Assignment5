@@ -40,3 +40,15 @@ INNER JOIN car_data_dimensions B ON A.CarKey = B.CarKey;
 SELECT * FROM combined_car_data;
 ```
 
+How to get the Average Horsepower of each Car Make
+```sql
+SELECT
+    `Car Make`,
+    AVG(Horsepower) AS AverageHorsepower
+FROM
+    combined_car_data
+GROUP BY
+    `Car Make`;
+    ```
+
+    
